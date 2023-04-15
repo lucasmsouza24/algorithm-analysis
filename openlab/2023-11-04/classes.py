@@ -8,7 +8,7 @@ class Grafo:
     def add_vertice(self, key):
         if self.key_not_exists(key):
             vertice = Vertice(key, len(self.vertices))
-            self.vertices.append(vertice)
+            wsself.vertices.append(vertice)
             return vertice
 
         print(f'Key {key} already exists')

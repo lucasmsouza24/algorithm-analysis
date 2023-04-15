@@ -19,7 +19,7 @@ def display_menu():
     return option
 
 def init_option():
-    sleep(0.5)
+    # sleep(0.5)
     print('=' * 40)
 
 def adicionar_vertice(grafo):
@@ -31,7 +31,7 @@ def adicionar_vertice(grafo):
         
         if grafo.key_exists(key):
             title(f'A chave ({key}) já existe dentro do grafo.')
-            sleep(1.3)
+            # sleep(1.3)
             continue
         else:
             grafo.add_vertice(key)
@@ -52,7 +52,7 @@ def adicionar_aresta(grafo):
             break
 
         print(f'Key ({key1}) inexistente. Tente novamente.')
-        sleep(0.5)
+        # sleep(0.5)
     
     # getting second vertex
     while True:
@@ -62,7 +62,7 @@ def adicionar_aresta(grafo):
             break
 
         print(f'Key ({key2}) inexistente. Tente novamente.')
-        sleep(0.5)
+        # sleep(0.5)
     
     # getting weight (optional)
     while True:
@@ -89,10 +89,10 @@ def exibir_vertices(grafo):
     title('Exibindo vertices')
 
     for s in grafo.str_all_vertices():
-        sleep(0.3)
+        # sleep(0.3)
         print(s)
     
-    sleep(1.5)
+    # sleep(1.5)
     
 
 def main():
@@ -109,7 +109,7 @@ def main():
             exibir_vertices(grafo)
         elif option == '4':
             title('Saindo...')
-            sleep(0.5)
+            # sleep(0.5)
             break
         else:
             print(f'Opção inválida. Tente novamente.')    
